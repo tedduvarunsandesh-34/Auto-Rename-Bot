@@ -3,24 +3,24 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "28408609")
+    API_HASH  = os.environ.get("API_HASH", "d6ddeafb0c189d91b8197ad49103e806")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8332453604:AAGM_C2IlmK6bp7n9pNRvmfrUuRMDBjP_Eo") 
     PORT = os.environ.get("PORT", "8080")
 
     # database config
-    DB_NAME = os.environ.get("DB_NAME","botskingdom")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","Auto-rename-bot")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://teddugovardhan544_db_user:WVjIA96jQ31net0j@cluster0.kwkkleo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
  
     # other configs
-    ADMIN_URL = "https://t.me/botskingdoms"
+    ADMIN_URL = "https://t.me/ind_gamer_1"
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "https://i.ibb.co/bMFcCB6B/59kLh.jpg")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
     FORCE_SUB   = os.environ.get("FORCE_SUB", "https://i.ibb.co/bMFcCB6B/59kLh.jpg") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002599753693"))
     FSUB_PIC = os.environ.get("FSUB_PIC", "")
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", "")
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", "@Govar_leech_bot")
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", "True"))
 
